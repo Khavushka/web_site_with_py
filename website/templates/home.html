@@ -2,10 +2,10 @@
 
 {% block content %}
 <h1 align="center">Notes</h1>
-<ul class="list-group list-group-flush"></ul>
+<ul class="list-group list-group-flush" id="notes">
     {% for note in user.notes %}
-    <li class="list-group-item"></li>{{ note.data }}
-    {% endfor %}
+    <li class="list-group-item">{{ note.data }}</li>
+    {% endfor %}</ul>
 <form method="POST">
     <textarea name="note" id="note" class="form-control"></textarea>
     <div align="center">
