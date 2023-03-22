@@ -1,6 +1,7 @@
 from . import db
 from flask_login import UserMixin
 from sqlalchemy.sql import func
+# from sqlalchemy.dialects.sqlite import dialect
 
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -15,4 +16,3 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(255))
     first_name = db.Column(db.String(255))
     notes = db.relationship('Note')
-    
