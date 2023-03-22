@@ -1,11 +1,14 @@
 '''
 How to make a website with Python, covering Flask, authentication and database
 - Link: https://www.typingdna.com/authentication-api.html
-'''
 
+try:
+ctrl+shift+P
+and than >python sel....
+'''
 from website import create_app
 
 app = create_app()
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) # esli etoj linii netu to run ne s rabotaet
+    
